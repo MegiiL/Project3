@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(73, 136, 209);
+    overflow: hidden; /* Prevents scroll-bar */
+}
+
+#canvasContainer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+}
+
+#canvas {
+    display: block;
+    touch-action: none; /* Prevent touch zoom */
+    -ms-touch-action: none;
+    -webkit-user-drag: none; /* Prevent image drag */
+    user-select: none; /* Prevent canvas selection */
+}
+
+.assets{
+    display: none;
+}
+
+#pauseButton {
+    position: absolute;
+    top: 5.5px; 
+    right: 19px; 
+    z-index: 10; /* Ensure it stays above the canvas */
+    background-color: rgb(7, 7, 7);
+    color: #ffffff;
+    border: none;
+    padding: 2px 2px;
+    cursor: pointer;
+    font-size: 8px;
+    border-radius: 3px;
+
+    /* Center text inside the button */
+    display: flex;
+    align-items: center; /* Vertically center */
+    justify-content: center; /* Horizontally center */
+    text-align: center; /* Align text within button */
+} 
